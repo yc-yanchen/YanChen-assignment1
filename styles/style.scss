@@ -1,0 +1,76 @@
+// GENERAL STYLE
+
+@import "setup";
+@import "header";
+@import "footer";
+
+$white: #ffffff;
+$darkBrown: #1d0303;
+$hardRed: #500801;
+$brown: #815600;
+
+html {
+    font-family: "Petit Formal Script", cursive;
+    font-size: 62.5%;
+    color: white;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+// HEADER STYLE
+
+header {
+    background-color: $brown;
+    padding: 0 0 75px 0;
+}
+
+.navFlex {
+    display: flex;
+    margin: 0 auto;
+    padding: 15px 0;
+
+    li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        a {
+            color: $white;
+            font-family: "Roboto", sans-serif;
+            font-size: 2rem;
+            font-weight: 300;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 30px 0 0;
+        }
+    }
+}
+
+// HERO STYLE
+
+.headerFlex {
+    display: flex;
+    align-items: center;
+
+    h1 {
+        font-size: 9rem;
+    }
+
+    .imgContainer {
+        margin: 0 0 0 100px;
+    }
+}
+
+// ABOUT STYLE
+
+.about {
+    background-color: $hardRed;
+
+    .aboutFlex {
+        display: flex;
+    }
+}
