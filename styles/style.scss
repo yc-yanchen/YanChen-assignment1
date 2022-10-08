@@ -17,8 +17,18 @@ html {
 
 .wrapper {
     width: 90%;
-    max-width: 1250px;
+    max-width: 1400px;
     margin: 0 auto;
+}
+
+h1 {
+    font-size: 9rem;
+    text-align: right;
+}
+
+h2 {
+    font-size: 5.4rem;
+    margin: 0 0 0 0;
 }
 
 // HEADER STYLE
@@ -56,12 +66,8 @@ header {
     display: flex;
     align-items: center;
 
-    h1 {
-        font-size: 9rem;
-    }
-
     .imgContainer {
-        margin: 0 0 0 100px;
+        margin: 0 0 0 150px;
     }
 }
 
@@ -69,8 +75,62 @@ header {
 
 .about {
     background-color: $hardRed;
+    padding: 125px 0;
 
     .aboutFlex {
         display: flex;
+
+        .imgContainer {
+            // width: 400px;
+            // height: 350px;
+
+            img {
+                width: 400px;
+                height: 400px;
+                object-fit: none;
+                object-position: -40px;
+            }
+        }
+        .textContainer {
+            display: flex;
+            flex-direction: column;
+            margin: 0 0 0 100px;
+
+            p {
+                font-family: "Roboto", sans-serif;
+                font-size: 2rem;
+                font-weight: 300;
+                line-height: 2.9rem;
+                letter-spacing: 0.02rem;
+            }
+
+            a {
+                font-size: 2.5rem;
+                line-height: 2.9rem;
+                padding: 15px 10px;
+                text-align: center;
+                background-color: $darkBrown;
+                display: block;
+                width: 200px;
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: $white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+// GALLERY STYLE
+
+.latestCollection {
+    background-color: $brown;
+    padding: 125px 0;
+
+    h2 {
+        font-size: 5.4rem;
+        text-align: center;
     }
 }

@@ -229,8 +229,18 @@ html {
 
 .wrapper {
   width: 90%;
-  max-width: 1250px;
+  max-width: 1400px;
   margin: 0 auto;
+}
+
+h1 {
+  font-size: 9rem;
+  text-align: right;
+}
+
+h2 {
+  font-size: 5.4rem;
+  margin: 0 0 0 0;
 }
 
 header {
@@ -268,18 +278,64 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-.headerFlex h1 {
-  font-size: 9rem;
-}
 .headerFlex .imgContainer {
-  margin: 0 0 0 100px;
+  margin: 0 0 0 150px;
 }
 
 .about {
   background-color: #500801;
+  padding: 125px 0;
 }
 .about .aboutFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.about .aboutFlex .imgContainer img {
+  width: 400px;
+  height: 400px;
+  -o-object-fit: none;
+     object-fit: none;
+  -o-object-position: -40px;
+     object-position: -40px;
+}
+.about .aboutFlex .textContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 0 0 100px;
+}
+.about .aboutFlex .textContainer p {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 2.9rem;
+  letter-spacing: 0.02rem;
+}
+.about .aboutFlex .textContainer a {
+  font-size: 2.5rem;
+  line-height: 2.9rem;
+  padding: 15px 10px;
+  text-align: center;
+  background-color: #1d0303;
+  display: block;
+  width: 200px;
+  text-decoration: none;
+}
+.about .aboutFlex .textContainer a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.latestCollection {
+  background-color: #815600;
+  padding: 125px 0;
+}
+.latestCollection h2 {
+  font-size: 5.4rem;
+  text-align: center;
 }
