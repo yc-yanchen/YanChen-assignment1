@@ -31,6 +31,27 @@ h2 {
     margin: 0 0 0 0;
 }
 
+h3 {
+    font-size: 2.5rem;
+    line-height: 2.9px;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2.9rem;
+    letter-spacing: 0.02rem;
+    margin: 0 0 0 0;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 // HEADER STYLE
 
 header {
@@ -43,20 +64,14 @@ header {
     margin: 0 auto;
     padding: 15px 0;
 
-    li {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-
-        a {
-            color: $white;
-            font-family: "Roboto", sans-serif;
-            font-size: 2rem;
-            font-weight: 300;
-            text-decoration: none;
-            display: inline-block;
-            margin: 0 30px 0 0;
-        }
+    a {
+        color: $white;
+        font-family: "Roboto", sans-serif;
+        font-size: 2rem;
+        font-weight: 300;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 30px 0 0;
     }
 }
 
@@ -75,7 +90,7 @@ header {
 
 .about {
     background-color: $hardRed;
-    padding: 125px 0;
+    padding: 110px 0;
 
     .aboutFlex {
         display: flex;
@@ -96,12 +111,8 @@ header {
             flex-direction: column;
             margin: 0 0 0 100px;
 
-            p {
-                font-family: "Roboto", sans-serif;
-                font-size: 2rem;
-                font-weight: 300;
-                line-height: 2.9rem;
-                letter-spacing: 0.02rem;
+            h2 {
+                margin: 0 0 20px 0;
             }
 
             a {
@@ -113,6 +124,7 @@ header {
                 display: block;
                 width: 200px;
                 text-decoration: none;
+                margin: 30px 0 0 0;
             }
 
             a:visited {
@@ -127,10 +139,38 @@ header {
 
 .latestCollection {
     background-color: $brown;
-    padding: 125px 0;
+    padding: 110px 0;
 
     h2 {
-        font-size: 5.4rem;
         text-align: center;
+        margin: 0 0 75px;
+    }
+
+    .gallery {
+        display: flex;
+        justify-content: space-between;
+
+        .imgContainer {
+            margin: 0 10px;
+        }
     }
 }
+
+// MIDDLE NAVIGATION STYLE
+
+.midNav {
+    background-color: $hardRed;
+    padding: 110px 0;
+
+    .midNavFlex {
+        display: flex;
+        justify-content: space-evenly;
+
+        .midNavContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
