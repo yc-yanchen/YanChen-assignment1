@@ -51,7 +51,22 @@ li {
     padding: 0;
     list-style: none;
 }
+.readMore {
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+    padding: 15px 10px;
+    text-align: center;
+    background-color: $darkBrown;
+    display: block;
+    width: 200px;
+    text-decoration: none;
+    margin: 30px 0 0 0;
+}
 
+.readMore:visited {
+    color: $white;
+    text-decoration: none;
+}
 // HEADER STYLE
 
 header {
@@ -114,23 +129,6 @@ header {
             h2 {
                 margin: 0 0 20px 0;
             }
-
-            a {
-                font-size: 2.5rem;
-                line-height: 2.9rem;
-                padding: 15px 10px;
-                text-align: center;
-                background-color: $darkBrown;
-                display: block;
-                width: 200px;
-                text-decoration: none;
-                margin: 30px 0 0 0;
-            }
-
-            a:visited {
-                color: $white;
-                text-decoration: none;
-            }
         }
     }
 }
@@ -174,3 +172,47 @@ header {
     }
 }
 
+// FOUR SQUARE
+
+.fourSquares {
+    background-color: $brown;
+
+    .squareFlex {
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
+
+.imgContainer1,
+.imgContainer2 {
+    width: 50%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.squareContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textContainer1,
+.textContainer2 {
+    width: 35%;
+    margin: 0% 7.5%;
+}
+
+.textContainer1 {
+    order: 1;
+}
+.textContainer2 {
+    order: 4;
+}
+.imgContainer1 {
+    order: 2;
+}
+.imgContainer2 {
+    order: 3;
+}
