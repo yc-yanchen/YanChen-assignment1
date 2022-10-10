@@ -71,13 +71,13 @@ li {
 
 header {
     background-color: $brown;
-    padding: 0 0 75px 0;
+    padding: 20px 0 75px 0;
 }
 
 .navFlex {
     display: flex;
     margin: 0 auto;
-    padding: 15px 0;
+    // padding: 15px 0;
 
     a {
         color: $white;
@@ -109,14 +109,15 @@ header {
 
     .aboutFlex {
         display: flex;
+        justify-content: space-between;
 
         .imgContainer {
-            // width: 400px;
-            // height: 350px;
+            width: 393px;
+            height: 393px;
 
             img {
-                width: 400px;
-                height: 400px;
+                width: 100%;
+                height: 100%;
                 object-fit: none;
                 object-position: -40px;
             }
@@ -124,7 +125,8 @@ header {
         .textContainer {
             display: flex;
             flex-direction: column;
-            margin: 0 0 0 100px;
+            // margin: 0 0 0 100px;
+            width: 65%;
 
             h2 {
                 margin: 0 0 20px 0;
@@ -149,7 +151,11 @@ header {
         justify-content: space-between;
 
         .imgContainer {
-            margin: 0 10px;
+            width: 30%;
+
+            img {
+                width: 100%;
+            }
         }
     }
 }
@@ -172,7 +178,7 @@ header {
     }
 }
 
-// FOUR SQUARE
+// FOUR SQUARES
 
 .fourSquares {
     background-color: $brown;
@@ -183,6 +189,12 @@ header {
     }
 }
 
+.squareContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .imgContainer1,
 .imgContainer2 {
     width: 50%;
@@ -190,12 +202,6 @@ header {
     img {
         width: 100%;
     }
-}
-
-.squareContainer {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .textContainer1,
@@ -215,4 +221,39 @@ header {
 }
 .imgContainer2 {
     order: 3;
+}
+
+// FOOTER
+
+footer {
+    background-color: $hardRed;
+    padding: 75px 0;
+}
+
+.footerFlex {
+    display: flex;
+
+    .footerBox {
+        flex: 1;
+    }
+
+    .navFlex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerBox:last-child {
+        text-align: right;
+    }
+}
+
+// COPYRIGHT SECTION
+
+.copyright {
+    background-color: $darkBrown;
+
+    p {
+        text-align: center;
+        padding: 7px 0;
+    }
 }
