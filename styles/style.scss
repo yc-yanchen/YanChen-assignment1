@@ -32,8 +32,8 @@ h2 {
 }
 
 h3 {
-    font-size: 2.5rem;
-    line-height: 2.9px;
+    font-size: 4.5rem;
+    margin: 0;
 }
 
 p {
@@ -51,10 +51,11 @@ li {
     padding: 0;
     list-style: none;
 }
+
 .readMore {
     font-size: 2.5rem;
     line-height: 2.9rem;
-    padding: 15px 10px;
+    padding: 10px 10px;
     text-align: center;
     background-color: $darkBrown;
     display: block;
@@ -125,12 +126,7 @@ header {
         .textContainer {
             display: flex;
             flex-direction: column;
-            // margin: 0 0 0 100px;
             width: 65%;
-
-            h2 {
-                margin: 0 0 20px 0;
-            }
         }
     }
 }
@@ -143,7 +139,7 @@ header {
 
     h2 {
         text-align: center;
-        margin: 0 0 75px;
+        margin: 0 0 75px 0;
     }
 
     .gallery {
@@ -193,6 +189,13 @@ header {
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    h2 {
+        margin: 0 0 30px 0;
+    }
+    p {
+        margin: 0 0 20px 0;
+    }
 }
 
 .imgContainer1,
@@ -237,16 +240,60 @@ footer {
         flex: 1;
     }
 
-    .navFlex {
+    .navFlex,
+    .footerBox:last-child {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        height: 100%;
     }
 
     .footerBox:last-child {
         text-align: right;
+
+        li {
+            text-align: right;
+        }
+
+        h3 {
+            margin: 0 0 20px 0;
+        }
+    }
+
+    .footerBox:nth-child(2) {
+        text-align: center;
+        flex: 2;
+        h2 {
+            margin: 0 0 20px 0;
+        }
     }
 }
 
+// FORM STYLE
+
+form {
+    display: flex;
+}
+
+form input {
+    width: 100%;
+    height: 59px;
+}
+
+button {
+    font-family: "Petit Formal Script", cursive;
+    color: $white;
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+    padding: 10px 10px;
+    text-align: center;
+    background-color: $darkBrown;
+    display: block;
+    width: 200px;
+    text-decoration: none;
+    margin: 0 0 0 0;
+    border: none;
+}
 // COPYRIGHT SECTION
 
 .copyright {
@@ -255,5 +302,115 @@ footer {
     p {
         text-align: center;
         padding: 7px 0;
+    }
+}
+
+// MEDIA QUERIES
+@media (max-width: 1300px) {
+    // GENERAL MEDIA QUERIES
+    h2 {
+        margin: 40px 0;
+    }
+    // HEADER MEDIA QUERY
+    header {
+        padding: 20px 0 50px 0;
+    }
+
+    .headerFlex {
+        flex-direction: column;
+
+        .imgContainer {
+            margin: 0;
+        }
+    }
+
+    // ABOUT SECTION MEDIA QUERY
+    .about {
+        padding: 75px 0;
+
+        .aboutFlex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .imgContainer {
+                width: fit-content;
+                height: fit-content;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .textContainer {
+                width: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 687px) {
+    // GENERAL MEDIA QUERY
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    h2 {
+        font-size: 4.5rem;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 4rem;
+    }
+
+    .readMore {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about,
+    .latestCollection,
+    .midNav {
+        padding: 75px 0;
+    }
+    // HEADER MEDIA QUERY
+
+    .headerFlex .imgContainer {
+        position: relative;
+        left: -125px;
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    // LATEST COLLECTION MEDIA QUERY
+
+    .latestCollection {
+        .gallery {
+            justify-content: space-around;
+            gap: 5%;
+
+            .imgContainer {
+                width: auto;
+            }
+
+            .imgContainer:last-child {
+                display: none;
+            }
+        }
+    }
+
+    //MIDDLE NAVIGATION MEDIA QUERY
+    .midNav .midNavFlex {
+        flex-direction: column;
+
+        .midNavContainer {
+            margin: 20px 0;
+        }
     }
 }
