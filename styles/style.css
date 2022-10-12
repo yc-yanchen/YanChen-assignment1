@@ -377,6 +377,11 @@ header {
   background-color: #500801;
   padding: 110px 0;
 }
+.midNav a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
 .midNav .midNavFlex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -402,6 +407,11 @@ header {
 }
 .midNav .midNavFlex .midNavContainer i {
   margin: 0 0 10px 0;
+}
+
+.wrapperModified {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .fourSquares {

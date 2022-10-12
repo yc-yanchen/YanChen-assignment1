@@ -161,6 +161,12 @@ header {
     background-color: $hardRed;
     padding: 110px 0;
 
+    a {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+    }
+
     .midNavFlex {
         display: flex;
         justify-content: space-evenly;
@@ -179,6 +185,10 @@ header {
 }
 
 // FOUR SQUARES
+.wrapperModified {
+    max-width: 1400px;
+    margin: 0 auto;
+}
 
 .fourSquares {
     background-color: $brown;
