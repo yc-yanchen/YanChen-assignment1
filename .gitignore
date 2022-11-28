@@ -3,4 +3,4 @@ node_modules
 *.pdf
 *.zip
 *.docx
-*.png
+*design/
